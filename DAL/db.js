@@ -6,7 +6,7 @@ const config = {
     server: '<your_server>',
     database: '<your_database>',
     pool: {
-        max: 20, // maximum number of connections in the pool
+        max: 10, // maximum number of connections in the pool
         min: 0, // minimum number of connections in the pool
         idleTimeoutMillis: 30000 // time in milliseconds to wait before closing an unused connection
     }
