@@ -8,7 +8,7 @@ export const getUser = async (email) => {
         const result = await request.query('SELECT * FROM users WHERE email = @email')
         return result.recordset[0]
     } catch (err) {
-        console.log(err)
+        console.log("error", err)
         return null
     }
 }
