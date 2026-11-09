@@ -13,4 +13,4 @@ app.use(bodyParser.json())
 app.use('/users', usersRoute)
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.listen(PORT, ()=> console.log(`Server running on port http://localhost:${PORT}`))
+app.listen(PORT, ()=> console.log(`Server running on port https://localhost:${PORT}`))

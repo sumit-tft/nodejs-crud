@@ -8,7 +8,7 @@ export const getUser = async (email) => {
         const result = await request.query('SELECT * FROM users WHERE email = @email')
         return result.recordset[0]
     } catch (err) {
-        console.log(err)
+        console.log("error", err)
         return null
     }
 }
@@ -23,7 +23,7 @@ export const addUser = async (user) => {
         await request.query('INSERT INTO users (name, email, password) VALUES (@name, @email, @password)')
         return true
     } catch (err) {
-        console.log(err)
+        console.log("error", err)
         return false
     }
 }
