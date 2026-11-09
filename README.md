@@ -82,4 +82,4 @@ curl -X DELETE http://localhost:3000/users/:id
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request.
+Contributions are welcome! Please feel free to submit a pull request
