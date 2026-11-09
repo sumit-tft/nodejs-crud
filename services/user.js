@@ -52,7 +52,7 @@ export const deleteUser = async (id) => {
         await request.query('DELETE FROM users WHERE id = @id')
         return true
     } catch (err) {
-        console.log(err)
+        console.log("error", err)
         return false
     }
 }
