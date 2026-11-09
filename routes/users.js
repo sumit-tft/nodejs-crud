@@ -6,7 +6,6 @@ import { getUserController, addUserController, updateUserController, deleteUserC
 router.get('/users/:email', getUserController)
 router.post('/users', addUserController)
 router.put('/users/:id', updateUserController)
-router.put('/users/:userId', updateUserController)
 router.delete('/users/:id', deleteUserController)
 
 router.get('/', (req, res)=> res.send('Home users'));
