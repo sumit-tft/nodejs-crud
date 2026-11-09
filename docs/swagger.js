@@ -38,7 +38,7 @@ const doc = {
   definitions: {
     'errorResponse.404': {
       "code": "404",
-      "message": "Not found",
+      "message": "Not found error",
     },
   },          // by default: empty object (Swagger 2.0)
 };
