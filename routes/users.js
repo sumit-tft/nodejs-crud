@@ -7,6 +7,7 @@ router.get('/users/:email', getUserController)
 router.post('/users', addUserController)
 router.put('/users/:id', updateUserController)
 router.delete('/users/:id', deleteUserController)
+router.delete('/users/:userId', deleteUserController)
 
 router.get('/', (req, res)=> res.send('Home users'));
 
